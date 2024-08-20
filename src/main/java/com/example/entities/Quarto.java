@@ -20,7 +20,7 @@ public class Quarto {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, length = 100)
-    private Long id_quarto;
+    private Long id;
 	
 	private String tipo;
 	

@@ -35,7 +35,7 @@ public class ReservaService {
 	public Reserva alterarReserva(Long id, Reserva alterarReserva) {
 		Optional <Reserva> existeReserva = reservaRepository.findById(id);
 		if (existeReserva.isPresent()) {
-			alterarReserva.setId_reserva(id);;
+			alterarReserva.setId(id);;
 			return reservaRepository.save(alterarReserva);
 		}
 		return null;

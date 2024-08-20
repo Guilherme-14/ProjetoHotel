@@ -22,7 +22,7 @@ public class Reserva {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, length = 100)
-    private Long id_reserva;
+    private Long id;
 	
 	private String dataCheckin;
 	

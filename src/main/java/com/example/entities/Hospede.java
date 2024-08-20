@@ -20,8 +20,7 @@ import lombok.NoArgsConstructor;
 public class Hospede {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false, length = 100)
-    private Long id_hospede;
+    private Long id;
 	
 	private String nome;
 	
@@ -40,9 +39,5 @@ public class Hospede {
 	private String cep;
 	
 	private String cpf;
-	
-	@ManyToOne
-    @JoinColumn(name = "id_reserva")
-    private Reserva reserva;
 	
 }

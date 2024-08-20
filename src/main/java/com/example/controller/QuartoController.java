@@ -19,7 +19,7 @@ import com.example.service.QuartoService;
 
 
 @RestController
-@RequestMapping("/quarto")
+@RequestMapping("/api/rooms")
 public class QuartoController {
 
 	private final QuartoService quartoService;

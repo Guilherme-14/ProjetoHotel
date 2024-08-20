@@ -35,7 +35,7 @@ public class QuartoService {
 	public Quarto alterarQuarto(Long id, Quarto alterarQuarto) {
 		Optional <Quarto> existeQuarto = quartoRepository.findById(id);
 		if (existeQuarto.isPresent()) {
-			alterarQuarto.setId_quarto(id);;
+			alterarQuarto.setId(id);;
 			return quartoRepository.save(alterarQuarto);
 		}
 		return null;

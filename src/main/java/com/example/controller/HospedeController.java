@@ -18,7 +18,7 @@ import com.example.entities.Hospede;
 import com.example.service.HospedeService;
 
 @RestController
-@RequestMapping("/hospede")
+@RequestMapping("/api/guests")
 public class HospedeController {
 private final HospedeService hospedeService;
 	

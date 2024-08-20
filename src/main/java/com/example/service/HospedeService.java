@@ -35,7 +35,7 @@ public class HospedeService {
 	public Hospede alterarHospede(Long id, Hospede alterarHospede) {
 		Optional <Hospede> existeHospede = hospedeRepository.findById(id);
 		if (existeHospede.isPresent()) {
-			alterarHospede.setId_hospede(id);;
+			alterarHospede.setId(id);;
 			return hospedeRepository.save(alterarHospede);
 		}
 		return null;

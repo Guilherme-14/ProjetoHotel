@@ -18,7 +18,7 @@ import com.example.entities.Reserva;
 import com.example.service.ReservaService;
 
 @RestController
-@RequestMapping("/reserva")
+@RequestMapping("/api/reservations")
 public class ReservaController {
 	private final ReservaService reservaService;
 	
